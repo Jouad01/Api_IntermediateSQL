@@ -36,9 +36,19 @@ h1 {
 .product p {
   margin: 10px 0;
 }
+
+.footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
   </style>
   <body>
-    <h1>All bikes in store</h1>
+    <h1>Bicyclestore: All bikes in store</h1>
     {% for product in products %}
     <div class="product">
       <p>{{ product.brand }}</p>
@@ -47,6 +57,8 @@ h1 {
       <p>{{ product.description }}</p>
     </div>
     {% endfor %}
-    
+    <div class="footer">
+      <p>© 2023 Bicyclestore. All rights reserved.</p>
+    </div>
   </body>
 </html>
